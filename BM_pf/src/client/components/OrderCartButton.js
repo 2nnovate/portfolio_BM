@@ -53,7 +53,7 @@ class OrderCartButton extends Component {
           </div>
         </div>
       )
-      // console.log(this.props.onOrderStore)
+      // console.log(this.props.menu)
         return(
           <div>
             {this.props.mode==="B"?cartOrder:callOrderCart}

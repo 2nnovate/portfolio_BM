@@ -59,7 +59,7 @@ class RealSearchBar extends Component {
       })
     }
     render() {
-      console.log(this.props.userRegion)
+      // console.log(this.props.userRegion)
       const dropDownMenu = (
         <div className="dropdown-container">
           <a className='dropdown-trigger btn' data-target='dropdown1'>search by</a>

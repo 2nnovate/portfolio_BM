@@ -194,11 +194,12 @@ class StateBar extends Component {
       )
       const searchButtonAvailable = (paths) => {
         let menu = /menu/;
-        if(menu.test(paths)||paths==='/'){
+        let pathSplit = paths.split('/')
+        if(menu.test(paths) && pathSplit.length < 4||paths==='/'){
           return search
         }
       }
-      // console.log(this.props.location.pathname)
+      // console.log(this.props.location.pathname.split('/'))
       // console.log(this.state)
       // console.log(this.props.onEidtRegion)
       // console.log(this.props.savedStoreLength)

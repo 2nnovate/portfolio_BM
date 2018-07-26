@@ -63,7 +63,7 @@ class InstancePay extends Component {
           );
         })
       }
-      console.log(this.props.orderLists)
+      // console.log(this.props.orderLists)
         return(
             <div className="store-list-container">
               {mapToStoreList(this.props.orderLists)}

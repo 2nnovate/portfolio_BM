@@ -68,8 +68,8 @@ class StoreDetailView extends Component {
       };
       const menusPerCateArr = cates(this.props.menuCategoreis, this.props.menus);
       const storesMenuList = () => {
-        console.log(this.props.menus)
-        console.log(menusPerCateArr)
+        // console.log(this.props.menus)
+        // console.log(menusPerCateArr)
         if(menusPerCateArr===undefined){
           return (
             <div>등록된 메뉴가 없습니다.</div>
@@ -246,7 +246,7 @@ class StoreDetailView extends Component {
       )
       // console.log(this.props.inform)
       // console.log(this.props.nowPath+"/detailed")
-      console.log(this.props.storeData.menus.findIndex(i=>i._id==="5b539c829c6cc4360461afd7"))
+      // console.log(this.props.storeData.menus.findIndex(i=>i._id==="5b539c829c6cc4360461afd7"))
         return(
             <div className="gray-background">
               {this.props.tabs==1?menuInform(this.props.storeData.explain):undefined}

@@ -119,11 +119,11 @@ class OrderConfirmPage extends Component {
           <div className="order-menu-informs">
             <div>
               <div className="title-bold-font">가격</div>
-              <div className="value-right-align">{this.props.menu.price}원</div>
+              <div className="value-right-align">{Number(this.props.menu.price)}원</div>
             </div>
             <div>
               <div className="title-bold-font">추가선택</div>
-              <div className="value-right-align">+{this.props.payPrice-this.props.menu.price}원</div>
+              <div className="value-right-align">+{Number(this.props.payPrice)-Number(this.props.menu.price)}원</div>
               <div className="value-right-align-small">{stringToSelectedOptions(this.props.selectedOptions)}</div>
             </div>
             <div className="more-bottom">
@@ -182,7 +182,8 @@ class OrderConfirmPage extends Component {
       // console.log(this.props.onClose)
       // console.log(this.props.currentUserId==='')
       // console.log(this.props.onOrderStore)
-      console.log(this.props.store.thumbNail)
+      // console.log(this.props.store.thumbNail)
+      // console.log(this.props.menu)
         return(
             <div className="order-comfirm">
               <div className="order-comfirm-box">

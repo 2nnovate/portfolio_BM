@@ -141,22 +141,22 @@ class EditStoreTwo extends Component {
     turnOnEditView = (e) => {
       let nthId = $(e.target).parents().attr('id');
       let nth = nthId.slice(0, 1);
-      console.log(nth)
-      console.log($(e.target))
-      console.log($(`div.${nth}th-menu`))
+      // console.log(nth)
+      // console.log($(e.target))
+      // console.log($(`div.${nth}th-menu`))
       $(`div#${nth}th-menu`).css('display', 'block');
     }
     turnOnOptionView = (e) => {
       let nthId = $(e.target).parents().attr('id');
       let nth = nthId.slice(0, 1);
-      console.log(nth)
-      console.log($(e.target))
-      console.log($(`div.${nth}th-menu`))
+      // console.log(nth)
+      // console.log($(e.target))
+      // console.log($(`div.${nth}th-menu`))
       $(`div#${nth}th-option`).css('display', 'block');
     }
     addToMenu = (e) => {
       let editViews = $(e.target).parents('div.edit-menu-view');
-      console.log(editViews)
+      // console.log(editViews)
     }
     selectChange = (e) => {
       let nthId = $(e.target).parents('div.edit-menu-view').attr('id');
@@ -305,8 +305,8 @@ class EditStoreTwo extends Component {
           )
         })
       }
-      console.log(this.state);
-      console.log(this.props.oneStore)
+      // console.log(this.state);
+      // console.log(this.props.oneStore)
         return(
             <div className="owner-register">
               {doneButton}

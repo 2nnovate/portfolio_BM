@@ -66,7 +66,7 @@ class WriteReviewView extends Component {
       // console.log(this.state.starRate)
       switch($(e.target).attr('id')) {
         case "firstStar":
-          console.log("firstStar is selected");
+          // console.log("firstStar is selected");
           $('#firstStar').attr('src', filledStar);
           $('#secondStar').attr('src', blankedStar);
           $('#thirdStar').attr('src', blankedStar);
@@ -77,7 +77,7 @@ class WriteReviewView extends Component {
           });
           return;
         case "secondStar":
-          console.log("secondStar is selected");
+          // console.log("secondStar is selected");
           $('#firstStar').attr('src', filledStar);
           $('#secondStar').attr('src', filledStar);
           $('#thirdStar').attr('src', blankedStar);
@@ -88,7 +88,7 @@ class WriteReviewView extends Component {
           });
           return;
         case "thirdStar":
-          console.log("thirdStar is selected");
+          // console.log("thirdStar is selected");
           $('#firstStar').attr('src', filledStar);
           $('#secondStar').attr('src', filledStar);
           $('#thirdStar').attr('src', filledStar);
@@ -99,7 +99,7 @@ class WriteReviewView extends Component {
           });
           return;
         case "fourthStar":
-          console.log("fourthStar is selected");
+          // console.log("fourthStar is selected");
           $('#firstStar').attr('src', filledStar);
           $('#secondStar').attr('src', filledStar);
           $('#thirdStar').attr('src', filledStar);
@@ -110,7 +110,7 @@ class WriteReviewView extends Component {
           });
           return;
         case "fivethStar":
-          console.log("fivethStar is selected");
+          // console.log("fivethStar is selected");
           $('#firstStar').attr('src', filledStar);
           $('#secondStar').attr('src', filledStar);
           $('#thirdStar').attr('src', filledStar);
@@ -252,7 +252,7 @@ class WriteReviewView extends Component {
         </div>
       )
       // console.log(this.props.storeData);
-      console.log(this.state);
+      // console.log(this.state);
       // console.log(this.props.getDataStatus);
         return(
             <div className="wrtie-review-container">
