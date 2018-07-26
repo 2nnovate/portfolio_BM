@@ -144,7 +144,7 @@ class DetailMenuView extends Component {
         ()=>{
           // console.log(this.props.orderStoreState.error)
           // console.log(this.props.orderStoreState)
-          if(this.props.orderStoreState.status==='SUCCESS'){
+          if(this.props.orderStoreState.status==='INIT'){
             M.toast({html:"주문수 1 올라감"});
           }else{
             let $toastContent;
@@ -233,6 +233,7 @@ class DetailMenuView extends Component {
       )
       // console.log(this.props.currentUserId)
       // console.log(this.state.store.menus)
+      // console.log(this.state)
         return(
             <div className="section gray-background">
               <div className="detail-menu-view">
@@ -251,7 +252,7 @@ class DetailMenuView extends Component {
                                payPrice={this.state.totalPrice}
                                selectedOptions={this.state.addedOptions}
                                multiple={this.state.multipleCount}
-                               menu={this.state.nowMenu}
+                               menu={this.state.nowMenuInform}
                                minPrice={this.state.store.minPriceToOrder}
                                onOrder={this.handleOrder}
                                currentUserId={this.props.currentUserId}

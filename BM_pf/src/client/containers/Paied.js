@@ -71,7 +71,7 @@ class Paied extends Component {
     }
     render() {
       const listType = this.props.match.params.list_type;
-      // console.log(this.props.currentUser)
+      // console.log(this.state.orderLists)
       return(
           <div>
             <SubTab mode={listType}
@@ -79,19 +79,19 @@ class Paied extends Component {
                     instanceCount={this.state.orderLists.length}/>
             <div className="section">
             {listType==="savedstore"?
-              (this.props.currentUser!==undefined?
+              (this.props.currentUser!==undefined&&this.props.savedStoreLists.length>0?
                 <SavedStore storeLists={this.state.savedStoreLists}/>:<BlankView
                                                                         blankNum="1"
                                                                         image="https://ucarecdn.com/dae27b1f-6182-430a-b470-ae19646c6d32/savedBlank.png"/>)
             :(undefined)}
             {listType==="instancepay"?
-              (this.props.currentUser!==undefined?
+              (this.props.currentUser!==undefined&&this.state.orderLists.length>0?
                 <InstancePay orderLists={this.state.orderLists}/>:<BlankView
                                                                     blankNum="1"
                                                                     image="https://ucarecdn.com/507ead1a-cec1-44e5-b1c2-2e8b1a1c4a48/defaultBlank.png"/>)
               :(undefined)}
             {listType==="call"?
-              (this.props.currentUser!==undefined?
+              (this.props.currentUser!==undefined&&this.props.callPay!==undefined?
                 <Call />:<BlankView
                                 blankNum="1"
                                 image="https://ucarecdn.com/507ead1a-cec1-44e5-b1c2-2e8b1a1c4a48/defaultBlank.png"/>)

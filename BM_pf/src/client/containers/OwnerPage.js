@@ -113,7 +113,7 @@ class OwnerPage extends Component {
         </div>
       );
       // console.log(this.state.storeList);
-      console.log(this.props.storeLists)
+      // console.log(this.props.storeLists)
         return(
             <div className="section">
               <div>

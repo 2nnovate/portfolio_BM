@@ -69,7 +69,7 @@ class OwnerEditTwo extends Component {
     }
     render() {
       // 수정할 가게의 _id
-      console.log(this.props.match.params.store_id);
+      // console.log(this.props.match.params.store_id);
         return(
             <div className="section">
               <EditStoreTwo oneStoreId={this.props.match.params.store_id}
